@@ -16,6 +16,7 @@
             <label for="">Persona</label>
             <input type="text" v-model="persona" class="form-control">
         </div>
+        <button @click="Add" class="btn btn-primary">Add Item</button>
     </div>
 </template>
 <script setup lang="ts">
@@ -24,5 +25,7 @@ const image = ref('');
 const name = ref('');
 const price = ref('');
 const persona = ref('');
+
+defineEmits(['newItem'])
 
 </script>

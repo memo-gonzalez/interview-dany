@@ -2,9 +2,9 @@
     <div class="container">
         <ProductItem v-for="(item, index) in list" :key="index"
             :data="item"/>
+        <button class="btn btn-primary" @click="addProduct">Nuevo</button>
 
         <NewProduct/>
-        <button class="btn btn-primary"@click="addProduct">Add Item</button>
     </div>
 
 </template>
